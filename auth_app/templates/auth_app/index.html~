@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+{% load staticfiles %}
+
+<meta charset="UTF-8">
+<meta name="description" content="Login as an investor and multiply" />
+<meta name="keywords" content="P2P"/>
+<meta name="author" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="Bootply" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>P2P</title>
+
+<!-- =========================
+     STYLESHEETS      
+============================== -->
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/jquery.vegas.min.css' %} ">
+<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'assets/icon-fonts/styles.css' %} ">
+<link rel="stylesheet" href="{% static 'css/pixeden-icons.css' %} ">
+
+<!-- CUSTOM STYLES -->
+<link rel="stylesheet" href=" {% static 'css/styles.css' %} ">
+<link rel="stylesheet" href=" {% static 'css/responsive.css' %} ">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<!-- WEBFONT -->
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic|Montserrat:700,400|Homemade+Apple' rel='stylesheet' type='text/css'>
+
+<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+
+<!-- JQUERY -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+
+
+<body>
+<!-- =========================
+   PRE LOADER       
+============================== -->
+<div class="preloader">
+  <div class="status">&nbsp;</div>
+</div>
+<!-- =========================
+   LOGIN SECTION       
+============================== -->
+<header id="home" class="header"style="height:700px" >
+	
+	<!-- TOP BAR -->
+	<div id="main-nav" class="navbar navbar-inverse bs-docs-nav" role="banner">
+		<div class="container">
+			<div class="navbar-header responsive-logo" style="height:83px">
+				
+				<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<div class="navbar-brand">
+				<!-- <a href="#"><img src=" # " alt="P2P" style="margin-left:20px;"></a> -->
+				</div>
+			</div>
+			<nav class="navbar-collapse collapse" role="navigation" id="bs-navbar-collapse">
+				<div class="nav navbar-nav navbar-right responsive-nav main-nav-list"style="margin-right:41px">
+					<div class="login-form-2 col-xs-12 col-md-12" style="margin-left:10px;margin-top:21px">
+                        <form method="post" action="{% url 'auth' %}"> {% csrf_token %}
+							<div class="col-xs-12 col-md-4 input-val"style="width:205px"><input type="text" class="form-control" name="username" id ="username" placeholder="Username"style="width:205px" /> <span class="error-msg" style="color:#FFF;">Incorrect email or password</span></div>
+							<div class="col-xs-12 col-md-4 input-val"style="margin-left:4px"><input type="password" class="form-control" name="password" id ="password" placeholder="Password"style="margin-left:2px;width:205px"/><a data-target="#changePass" data-toggle="modal" style="color:#FFF; cursor:pointer;margin-left:5px;">Forgot Password?</a></div>
+							<div class="col-xs-12 col-md-2"style="margin-left:418px;margin-top:-75px" ><button type="submit" class="btn btn-primary login-btn" style="margin-left:-6px;width:90px;margin-top:1px;">LOG IN</button></div>
+						</form>
+					</div>
+				</div>
+			</nav>
+      	</div>
+      
+  	</div>
+
+
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<!-- / END TOP BAR -->
+	
+	<!-- BIG HEADING WITH CALL TO ACTION BUTTONS AND SHORT MESSAGES -->
+		<div class="container">
+		
+		<!-- HEADING -->
+			<div id="layer-1" class="col-xs-12 col-md-6">
+				<div class="col-xs-12">
+					<h1 class="intro" style="text-transform:none;">Invest Wisely!</h1>
+					<h3 class="intro-sub">Explore, Think and Invest</h3>
+					
+					<!-- CALL TO ACTION BUTTONS -->
+					<div class="buttons inpage-scroll">
+						<!-- <a href="#about" class="btn btn-primary custom-button red-btn">See our Blog</a> -->
+					</div>
+				</div>
+				<!--<div class="mobile col-xs-6"> -->
+					<!--img src=" images/mobiles/header.png " style="margin-top: 25%; margin-left: 10%;"/-->
+				</div>
+
+				<div class="col-xs-12 col-md-6" id="signUp" style="margin-top:47px;">
+					<div class="register-box" style="margin-top:25%;">
+					  <div class="register-box-body loginBox col-xs-12" style="
+    border-bottom: 4px solid;    border-bottom-color: #337ab7;    border-left: 4px solid;    border-left-color: #337ab7;    border-right: 4px solid;    border-right-color: #337ab7;    border-top: 4px solid;    border-top-color: #337ab7;
+    width: 305px;border-radius:4px;
+    margin-left: 229px;height:423px;
+">
+						<p class="login-box-msg register-logo" style="font-size: 26px;margin-top: 15px;color: black;margin-bottom:8px">Sign Up </p>
+                        <form action="{% url 'SignUp' %}" method="post" id="form" >
+			{% csrf_token %}
+                            <div class="form-group has-feedback">
+
+                                <input class="form-control" id="id_phone" name="phone" placeholder="Phone*" required="true" type="text">
+
+                                <span class="glyphicon glyphicon-eaphone form-control-feedback"></span>
+                                <span class="error-msg"></span>
+                            </div>
+                            <div class="form-group has-feedback">
+                                <input type="email" class="form-control col-xs-10" name="email" placeholder="Email*">
+
+                                <span class="error-msg">Error Message</span>
+                            </div>
+                            <div class="form-group has-feedback">
+                                <input type="text" class="form-control col-xs-10" name="name" placeholder= "Name">
+
+                                <span class="error-msg">Error Message</span>
+                            </div>
+                            <div class="form-group has-feedback">
+                                <input type="password" class="form-control col-xs-10" name="password1" placeholder="Password*">
+
+                                <span class="error-msg">Error Message</span>
+                            </div>
+                            <div class="form-group has-feedback">
+                                <input type="password" class="form-control col-xs-10" name="password" placeholder="Confirm password*">
+
+                                <span class="error-msg">Error Message</span>
+                            </div>
+
+                            <div class="col-xs-5">
+                                <button type="submit" class="btn btn-primary btn-block btn-flat" style="
+                                    margin-left: -15px;
+                                    width: 269px;
+                                    margin-bottom: 26px;
+                                    ">
+			
+			<center style="">Register</center></button><center></center></button>
+                        </div><!-- /.col -->
+                        <!-- <a href="#next">Next</a> -->
+                    </div>
+                </form>        
+					  </div>
+						<p class="login-box-msg register-logo"></p>
+						        
+					  </div>
+					</div>
+				</div>
+		</div>
+	</div> <!-- / END BIG HEADING WITH CALL TO ACTION BUTTONS AND SHORT MESSAGES  -->
+	
+</header> <!-- / END HOME SECTION  -->
+
+<!-- =========================
+   ABOUT SECTION      
+============================== -->
+
+
+<!-- =========================
+   FEATURES SECTION      
+============================== -->
+
+
+</div> <!-- / END CONTAINER -->
+</footer> <!-- / END FOOOTER  -->
+
+<!-- SCRIPTS -->
+<script>
+    var msg="{{error_msg}}";
+    if(msg)
+        alert(msg)
+</script>
+<script src=" {% static 'js/bootstrap.min.js' %} "></script>
+<script src=" {% static 'js/jquery.nav.js' %}  "></script>
+<script src="{% static 'js/wow.min.js' %} "></script>
+<script src="{% static 'js/jquery.knob.js' %}  "></script>
+<script src="{% static 'js/jquery.vegas.min.js' %}  "></script>
+<script src="{% static 'js/p2p.js' %}  "></script>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+
+<form action="{% url 'Invest' post.id %}" method="POST">
+    {% csrf_token %} 
+    
+    <p> Amount requested : {{post.amount_requested}} </p>
+    <p> Amount received :  {{post.amount_received}} </p>
+    <label for="amount">Enter Amount </label>
+    <input id="amount" type="text" name="amount">
+    <input type="submit" value="Invest">
+    
+</form>
+

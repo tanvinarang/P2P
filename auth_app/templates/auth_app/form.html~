@@ -1,0 +1,12 @@
+{% for p in post %}
+<form action="{% url 'landing_page' %}" method="POST">
+    {% csrf_token %} 
+    
+    <p> Amount requested : {{p.amount_requested}} </p>
+    <p> Amount received : {{ p.amount_received}} </p>
+    <label for="amount">Enter Amount </label>
+    <input id="amount" type="text" name="amount">
+    <input type="submit" value="Invest">
+    
+</form>
+{% endfor %}

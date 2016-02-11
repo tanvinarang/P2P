@@ -1,0 +1,382 @@
+@media (min-width: 992px) and (max-width: 1024px) {
+     .navbar-right {
+        float: none !important;
+        margin: auto;
+        margin-left: 130px;
+    }
+	#layer-1 img{
+		margin-top:42% !important;
+		width:100%;
+	}
+	#office-pics{
+	height:500px;
+	}
+	.slider{
+		height:500px !important;
+	}
+	/* .play-btn{
+		top:65% !important;
+		right:35% !important;
+	} */
+    
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    
+    /* TOP BAR ELEMENTS */    
+	.responsive-logo {
+		width: 100%;
+		position: relative;
+		text-align: center;
+		margin-top: 10px;
+		padding-top: 5px;
+		
+	}
+   
+	.responsive-logo a {
+		float: none !important;
+	}
+
+	.responsive-nav {
+		text-align: center;
+		width: 100%;
+		padding-top: 0px;
+	}
+
+	.responsive-nav li {
+		margin-bottom: 15px;
+		margin-top: 0 !important;
+	}
+
+	.navbar-brand {
+		width: 100%;
+	}
+
+	.navbar-brand img {
+		padding-left:200px;
+
+	}
+     
+     
+     /* HOME */
+	.intro {
+		margin-top: 50%;
+		line-height: 2.438rem !important;
+		font-size: 1.813rem;
+	}
+      
+      /* ABOUT US */
+	.big-intro {
+		text-align: center !important;
+	}
+
+	.about-us .column {
+		margin-bottom: 40px;
+	}
+
+	.skills {
+		margin-bottom: 78px !important;
+	}
+      
+      /* TEAM */
+	.work-details .profile-pic {
+		width: 275px;
+		height: 275px;
+	}
+
+	.work-details .details {
+		display: none;
+	}
+      /* DOWNLOAD NOW */
+	.download-now {
+		margin: auto;
+		text-align: center !important;
+	}
+
+	.download-now h3 {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.download-now .red-btn {
+		float: none;
+	}
+      
+      /* FOOTER */
+	footer {
+		padding-top: 40px;
+	}
+
+	.company-details {
+		padding-top: 0;
+		padding-bottom: 33px;
+	}
+
+	.copyright {
+		width: 100%;
+		padding-top: 33px;
+		padding-bottom: 33px;
+	}
+}
+@media (max-width: 1024px) {
+    .features {
+        text-align: center;
+    }
+    
+    .features .feature-icon {
+        float: none;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* @media (max-width: 1030px) {
+   .collapse {
+       display: none !important;
+   }
+} */
+
+@media (max-width: 767px) {
+ 
+	
+
+    html {
+        font-size: 90%;
+    }
+    
+    .bs-navbar-collapse {
+		border: 0;
+	}
+
+	.navbar-inverse .navbar-nav {
+		padding-left: 10px;
+		line-height: normal;
+		text-align: center;
+	}
+
+	.navbar-inverse .navbar-nav>li {
+		display: inline-block;
+		margin-bottom: 0;
+	}
+	.main-nav-list>li:last-child{
+		display:none!important;
+	}
+    /* HOME */
+	.header {
+		min-height: inherit;
+		padding-bottom: 75px;
+	}
+	.career-head {
+		min-height: inherit;
+		padding-bottom:0px;
+	}
+
+	.intro {
+		margin-top: 60%;
+		line-height: 25px !important;
+		font-size: 20px;
+		width:200%;
+		text-align:center;
+	}
+	.mobile{
+		display:none;
+	}
+      
+      /* ABOUT US */
+	.big-intro {
+		text-align: center !important;
+		font-size: 8vw !important;
+	}
+
+	.about-us .column {
+		margin-bottom: 40px;
+	}
+
+	.skills {
+		margin-bottom: 78px !important;
+	}
+      
+      /* DOWNLOAD NOW */
+	.download-now {
+		margin: auto;
+		text-align: center !important;
+	}
+
+	.download-now h3 {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.download-now .red-btn {
+		float: none;
+	}
+      
+      /* FOOTER */
+	footer {
+		padding-top: 40px;
+	}
+
+	.company-details {
+		padding-top: 0;
+		padding-bottom: 33px;
+	}
+
+	.copyright {
+		width: 100%;
+		padding-top: 33px;
+		padding-bottom: 33px;
+	}
+}
+
+@media (max-width: 480px) {
+ 
+
+/* HOME */
+	html {
+        font-size: 70%;
+    }
+	.responsive-logo img {
+        width: 70%;
+    }
+    
+    #main-nav {
+        min-height: 50px;
+    }
+	
+	#afterText{
+		display:none;
+	}
+
+	.item{
+		height:130px !important;
+	}
+	.item h5{
+		font-size:11px;
+	}
+	.item-top-content-inner {
+		padding: 10px 0px 10px 5px;
+		background: rgba(255,255,255,.95);
+		width: 150%;
+	}
+	#office-pics{
+		height:300px;
+	}
+	.off-pic{
+		height:300px !important;
+	}
+	.slider{
+		height:300px !important;
+	}
+	.back-button {
+		padding: 5px 5px 5px 5px;
+		border-radius: 4px;
+		width:33%;
+	}
+	.intro {
+		margin-top: 100%;
+		line-height: 20px !important;
+		font-size: 15px;
+		width:250%;
+		text-align:center;
+	}
+	.intro-sub {
+		margin-top:5%;
+		line-height: 20px !important;
+		font-size: 15px;
+		width:250%;
+		text-align:center;
+	}
+	.perk-desc{
+		font-size:11px;
+	}
+	.inpage-scroll{
+		width:250%;
+	}
+	/* .play-btn{
+		right:20% !important;
+	} */
+	.mobile-pic{
+		display:none;
+	}
+    
+    .about,.features,.works,.feature-details,.our-team,.career,.contact-us{
+		padding-top: 60px;
+	}
+    .buttons {
+	    margin-bottom: 0;
+	    margin-top: 30px;
+	}
+     
+    .custom-button {
+        padding: 7px 10px;
+		font-size:12px;
+		margin:0;
+		margin-right:10px;
+    }
+	.fd-headings{
+		font-size:24px;
+		text-transform:uppercase;
+		color:#404040;
+		margin-bottom:10%;
+	}
+	#career-desc{
+		display:none;
+	}
+	.hidePic{
+		display:none;
+	}
+     h1 {
+        font-weight: normal;
+    }
+    
+	h2 {
+		font-size: 6.5vw !important;
+	}
+	
+	 h3 {
+        font-size: 1.7rem;
+    }
+
+	.other-focus-list ul li {
+		display: block;
+		text-align: left;
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 320px) {
+    
+    html {
+        font-size: 62.5%;
+    }
+    
+    
+    body {
+        font-size: 1.3rem;
+    }
+    
+    .about,.features,.works,.feature-details,.our-team,.career,.contact-us {
+	padding-top: 50px;
+}
+    
+    h1 {
+        font-weight: normal;
+    }
+    
+    h3 {
+        font-size: 1.7rem;
+    }
+    
+    .intro {
+		margin-top: 100%;
+		line-height: 20px !important;
+		font-size: 15px;
+		width:250%;
+		text-align:center;
+	}
+
+	.client-list ul li {
+		display: block;
+	}
+}
