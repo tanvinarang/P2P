@@ -30,11 +30,7 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
-EMAIL_HOST = 'smtp.sendgrid.net'
-EMAIL_HOST_USER = 'tanvinarang'
-EMAIL_HOST_PASSWORD = 'tyranny1907'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
+
 
 '''
 IF using gmail,you will need to
